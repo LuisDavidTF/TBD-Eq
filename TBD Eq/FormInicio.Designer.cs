@@ -29,174 +29,178 @@ namespace TBD_Eq
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pnlConteiner = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.pnlBtnsCategorys = new System.Windows.Forms.Panel();
+            this.btnKids = new System.Windows.Forms.Button();
+            this.btnMen = new System.Windows.Forms.Button();
+            this.btnWoman = new System.Windows.Forms.Button();
+            this.btnCategorys = new System.Windows.Forms.Button();
+            this.pnlPCustom = new System.Windows.Forms.Panel();
+            this.pbCarouselPCustom = new System.Windows.Forms.PictureBox();
+            this.pbRigthPCustom = new System.Windows.Forms.PictureBox();
+            this.pbLeftPCustom = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pnlProductsMSales = new System.Windows.Forms.Panel();
+            this.pbCarouselMSales = new System.Windows.Forms.PictureBox();
+            this.pbLeftMSales = new System.Windows.Forms.PictureBox();
+            this.pbRigthMSales = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlTableGrid = new System.Windows.Forms.Panel();
+            this.tbGridProductsCustom = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.pnlConteiner.SuspendLayout();
+            this.pnlBtnsCategorys.SuspendLayout();
+            this.pnlPCustom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarouselPCustom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRigthPCustom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeftPCustom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.pnlProductsMSales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarouselMSales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeftMSales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRigthMSales)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel6.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.pnlTableGrid.SuspendLayout();
+            this.tbGridProductsCustom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // pnlConteiner
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.AutoScrollMargin = new System.Drawing.Size(0, 10);
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(970, 578);
-            this.panel2.TabIndex = 2;
+            this.pnlConteiner.AutoScroll = true;
+            this.pnlConteiner.AutoScrollMargin = new System.Drawing.Size(0, 10);
+            this.pnlConteiner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
+            this.pnlConteiner.Controls.Add(this.btnLogin);
+            this.pnlConteiner.Controls.Add(this.pnlBtnsCategorys);
+            this.pnlConteiner.Controls.Add(this.pnlPCustom);
+            this.pnlConteiner.Controls.Add(this.pnlProductsMSales);
+            this.pnlConteiner.Controls.Add(this.pnlTableGrid);
+            this.pnlConteiner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlConteiner.Location = new System.Drawing.Point(0, 0);
+            this.pnlConteiner.Name = "pnlConteiner";
+            this.pnlConteiner.Size = new System.Drawing.Size(970, 531);
+            this.pnlConteiner.TabIndex = 2;
             // 
-            // button9
+            // btnLogin
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(205)))), ((int)(((byte)(191)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(838, 980);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(108, 30);
-            this.button9.TabIndex = 4;
-            this.button9.Text = "Iniciar Sesion";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(205)))), ((int)(((byte)(191)))));
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(838, 980);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(108, 30);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Iniciar Sesion";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
-            // panel5
+            // pnlBtnsCategorys
             // 
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.button7);
-            this.panel5.Controls.Add(this.button6);
-            this.panel5.Controls.Add(this.button5);
-            this.panel5.Location = new System.Drawing.Point(12, 506);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(88, 30);
-            this.panel5.TabIndex = 2;
+            this.pnlBtnsCategorys.Controls.Add(this.btnKids);
+            this.pnlBtnsCategorys.Controls.Add(this.btnMen);
+            this.pnlBtnsCategorys.Controls.Add(this.btnWoman);
+            this.pnlBtnsCategorys.Controls.Add(this.btnCategorys);
+            this.pnlBtnsCategorys.Location = new System.Drawing.Point(12, 506);
+            this.pnlBtnsCategorys.Name = "pnlBtnsCategorys";
+            this.pnlBtnsCategorys.Size = new System.Drawing.Size(88, 30);
+            this.pnlBtnsCategorys.TabIndex = 2;
             // 
-            // button8
+            // btnKids
             // 
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(0, 90);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(88, 30);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Niños";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Visible = false;
+            this.btnKids.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKids.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnKids.Location = new System.Drawing.Point(0, 90);
+            this.btnKids.Name = "btnKids";
+            this.btnKids.Size = new System.Drawing.Size(88, 30);
+            this.btnKids.TabIndex = 3;
+            this.btnKids.Text = "Niños";
+            this.btnKids.UseVisualStyleBackColor = true;
+            this.btnKids.Visible = false;
+            this.btnKids.Click += new System.EventHandler(this.btnKids_Click);
             // 
-            // button7
+            // btnMen
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(0, 60);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 30);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Caballero";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Visible = false;
+            this.btnMen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMen.Location = new System.Drawing.Point(0, 60);
+            this.btnMen.Name = "btnMen";
+            this.btnMen.Size = new System.Drawing.Size(88, 30);
+            this.btnMen.TabIndex = 2;
+            this.btnMen.Text = "Caballero";
+            this.btnMen.UseVisualStyleBackColor = true;
+            this.btnMen.Visible = false;
+            this.btnMen.Click += new System.EventHandler(this.btnMen_Click);
             // 
-            // button6
+            // btnWoman
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(0, 30);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 30);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "Dama";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Visible = false;
+            this.btnWoman.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWoman.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnWoman.Location = new System.Drawing.Point(0, 30);
+            this.btnWoman.Name = "btnWoman";
+            this.btnWoman.Size = new System.Drawing.Size(88, 30);
+            this.btnWoman.TabIndex = 1;
+            this.btnWoman.Text = "Dama";
+            this.btnWoman.UseVisualStyleBackColor = true;
+            this.btnWoman.Visible = false;
+            this.btnWoman.Click += new System.EventHandler(this.btnWoman_Click);
             // 
-            // button5
+            // btnCategorys
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(88, 30);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Categorias";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCategorys.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCategorys.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCategorys.Location = new System.Drawing.Point(0, 0);
+            this.btnCategorys.Name = "btnCategorys";
+            this.btnCategorys.Size = new System.Drawing.Size(88, 30);
+            this.btnCategorys.TabIndex = 0;
+            this.btnCategorys.Text = "Categorias";
+            this.btnCategorys.UseVisualStyleBackColor = true;
+            this.btnCategorys.Click += new System.EventHandler(this.btnCategorys_Click);
             // 
-            // panel4
+            // pnlPCustom
             // 
-            this.panel4.Controls.Add(this.pictureBox13);
-            this.panel4.Controls.Add(this.pictureBox11);
-            this.panel4.Controls.Add(this.pictureBox10);
-            this.panel4.Controls.Add(this.pictureBox6);
-            this.panel4.Controls.Add(this.pictureBox7);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 250);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(949, 250);
-            this.panel4.TabIndex = 1;
+            this.pnlPCustom.Controls.Add(this.pbCarouselPCustom);
+            this.pnlPCustom.Controls.Add(this.pbRigthPCustom);
+            this.pnlPCustom.Controls.Add(this.pbLeftPCustom);
+            this.pnlPCustom.Controls.Add(this.pictureBox6);
+            this.pnlPCustom.Controls.Add(this.pictureBox7);
+            this.pnlPCustom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlPCustom.Location = new System.Drawing.Point(0, 250);
+            this.pnlPCustom.Name = "pnlPCustom";
+            this.pnlPCustom.Size = new System.Drawing.Size(949, 250);
+            this.pnlPCustom.TabIndex = 1;
             // 
-            // pictureBox13
+            // pbCarouselPCustom
             // 
-            this.pictureBox13.Image = global::TBD_Eq.Properties.Resources.Ofertas_personalizadas;
-            this.pictureBox13.Location = new System.Drawing.Point(96, 0);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(755, 250);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 6;
-            this.pictureBox13.TabStop = false;
+            this.pbCarouselPCustom.Image = global::TBD_Eq.Properties.Resources.Ofertas_personalizadas;
+            this.pbCarouselPCustom.Location = new System.Drawing.Point(96, 0);
+            this.pbCarouselPCustom.Name = "pbCarouselPCustom";
+            this.pbCarouselPCustom.Size = new System.Drawing.Size(755, 250);
+            this.pbCarouselPCustom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarouselPCustom.TabIndex = 6;
+            this.pbCarouselPCustom.TabStop = false;
             // 
-            // pictureBox11
+            // pbRigthPCustom
             // 
-            this.pictureBox11.Image = global::TBD_Eq.Properties.Resources.Arrow_rigth;
-            this.pictureBox11.Location = new System.Drawing.Point(848, 75);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 5;
-            this.pictureBox11.TabStop = false;
+            this.pbRigthPCustom.Image = global::TBD_Eq.Properties.Resources.Arrow_rigth;
+            this.pbRigthPCustom.Location = new System.Drawing.Point(848, 75);
+            this.pbRigthPCustom.Name = "pbRigthPCustom";
+            this.pbRigthPCustom.Size = new System.Drawing.Size(100, 96);
+            this.pbRigthPCustom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRigthPCustom.TabIndex = 5;
+            this.pbRigthPCustom.TabStop = false;
             // 
-            // pictureBox10
+            // pbLeftPCustom
             // 
-            this.pictureBox10.Image = global::TBD_Eq.Properties.Resources.Arrow_left;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 75);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 4;
-            this.pictureBox10.TabStop = false;
+            this.pbLeftPCustom.Image = global::TBD_Eq.Properties.Resources.Arrow_left;
+            this.pbLeftPCustom.Location = new System.Drawing.Point(0, 75);
+            this.pbLeftPCustom.Name = "pbLeftPCustom";
+            this.pbLeftPCustom.Size = new System.Drawing.Size(100, 96);
+            this.pbLeftPCustom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLeftPCustom.TabIndex = 4;
+            this.pbLeftPCustom.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -216,49 +220,49 @@ namespace TBD_Eq
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
             // 
-            // panel3
+            // pnlProductsMSales
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
-            this.panel3.Controls.Add(this.pictureBox12);
-            this.panel3.Controls.Add(this.pictureBox9);
-            this.panel3.Controls.Add(this.pictureBox8);
-            this.panel3.Controls.Add(this.pictureBox5);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(949, 250);
-            this.panel3.TabIndex = 0;
+            this.pnlProductsMSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
+            this.pnlProductsMSales.Controls.Add(this.pbCarouselMSales);
+            this.pnlProductsMSales.Controls.Add(this.pbLeftMSales);
+            this.pnlProductsMSales.Controls.Add(this.pbRigthMSales);
+            this.pnlProductsMSales.Controls.Add(this.pictureBox5);
+            this.pnlProductsMSales.Controls.Add(this.pictureBox4);
+            this.pnlProductsMSales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlProductsMSales.Location = new System.Drawing.Point(0, 0);
+            this.pnlProductsMSales.Name = "pnlProductsMSales";
+            this.pnlProductsMSales.Size = new System.Drawing.Size(949, 250);
+            this.pnlProductsMSales.TabIndex = 0;
             // 
-            // pictureBox12
+            // pbCarouselMSales
             // 
-            this.pictureBox12.Image = global::TBD_Eq.Properties.Resources.mayores_ventas;
-            this.pictureBox12.Location = new System.Drawing.Point(95, 0);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(756, 250);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 4;
-            this.pictureBox12.TabStop = false;
+            this.pbCarouselMSales.Image = global::TBD_Eq.Properties.Resources.mayores_ventas;
+            this.pbCarouselMSales.Location = new System.Drawing.Point(95, 0);
+            this.pbCarouselMSales.Name = "pbCarouselMSales";
+            this.pbCarouselMSales.Size = new System.Drawing.Size(756, 250);
+            this.pbCarouselMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarouselMSales.TabIndex = 4;
+            this.pbCarouselMSales.TabStop = false;
             // 
-            // pictureBox9
+            // pbLeftMSales
             // 
-            this.pictureBox9.Image = global::TBD_Eq.Properties.Resources.Arrow_left;
-            this.pictureBox9.Location = new System.Drawing.Point(0, 81);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
+            this.pbLeftMSales.Image = global::TBD_Eq.Properties.Resources.Arrow_left;
+            this.pbLeftMSales.Location = new System.Drawing.Point(0, 81);
+            this.pbLeftMSales.Name = "pbLeftMSales";
+            this.pbLeftMSales.Size = new System.Drawing.Size(100, 96);
+            this.pbLeftMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLeftMSales.TabIndex = 3;
+            this.pbLeftMSales.TabStop = false;
             // 
-            // pictureBox8
+            // pbRigthMSales
             // 
-            this.pictureBox8.Image = global::TBD_Eq.Properties.Resources.Arrow_rigth;
-            this.pictureBox8.Location = new System.Drawing.Point(848, 71);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 2;
-            this.pictureBox8.TabStop = false;
+            this.pbRigthMSales.Image = global::TBD_Eq.Properties.Resources.Arrow_rigth;
+            this.pbRigthMSales.Location = new System.Drawing.Point(848, 71);
+            this.pbRigthMSales.Name = "pbRigthMSales";
+            this.pbRigthMSales.Size = new System.Drawing.Size(100, 96);
+            this.pbRigthMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbRigthMSales.TabIndex = 2;
+            this.pbRigthMSales.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -278,34 +282,34 @@ namespace TBD_Eq
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // panel6
+            // pnlTableGrid
             // 
-            this.panel6.Controls.Add(this.tableLayoutPanel1);
-            this.panel6.Location = new System.Drawing.Point(3, 542);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(943, 432);
-            this.panel6.TabIndex = 3;
+            this.pnlTableGrid.Controls.Add(this.tbGridProductsCustom);
+            this.pnlTableGrid.Location = new System.Drawing.Point(3, 542);
+            this.pnlTableGrid.Name = "pnlTableGrid";
+            this.pnlTableGrid.Size = new System.Drawing.Size(943, 432);
+            this.pnlTableGrid.TabIndex = 3;
             // 
-            // tableLayoutPanel1
+            // tbGridProductsCustom
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.36199F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(943, 432);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tbGridProductsCustom.ColumnCount = 5;
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.Controls.Add(this.pictureBox14, 0, 0);
+            this.tbGridProductsCustom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbGridProductsCustom.Location = new System.Drawing.Point(0, 0);
+            this.tbGridProductsCustom.Name = "tbGridProductsCustom";
+            this.tbGridProductsCustom.RowCount = 5;
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.36199F));
+            this.tbGridProductsCustom.Size = new System.Drawing.Size(943, 432);
+            this.tbGridProductsCustom.TabIndex = 0;
             // 
             // pictureBox14
             // 
@@ -322,28 +326,28 @@ namespace TBD_Eq
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 578);
+            this.ClientSize = new System.Drawing.Size(970, 531);
             this.ControlBox = false;
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlConteiner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormInicio";
             this.Text = "FormInicio";
-            this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.pnlConteiner.ResumeLayout(false);
+            this.pnlBtnsCategorys.ResumeLayout(false);
+            this.pnlPCustom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarouselPCustom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRigthPCustom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeftPCustom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.pnlProductsMSales.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarouselMSales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeftMSales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRigthMSales)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.pnlTableGrid.ResumeLayout(false);
+            this.tbGridProductsCustom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
 
@@ -351,27 +355,27 @@ namespace TBD_Eq
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Panel pnlConteiner;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Panel pnlBtnsCategorys;
+        private System.Windows.Forms.Button btnKids;
+        private System.Windows.Forms.Button btnMen;
+        private System.Windows.Forms.Button btnWoman;
+        private System.Windows.Forms.Button btnCategorys;
+        private System.Windows.Forms.Panel pnlPCustom;
+        private System.Windows.Forms.PictureBox pbCarouselPCustom;
+        private System.Windows.Forms.PictureBox pbRigthPCustom;
+        private System.Windows.Forms.PictureBox pbLeftPCustom;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Panel pnlProductsMSales;
+        private System.Windows.Forms.PictureBox pbCarouselMSales;
+        private System.Windows.Forms.PictureBox pbLeftMSales;
+        private System.Windows.Forms.PictureBox pbRigthMSales;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel pnlTableGrid;
+        private System.Windows.Forms.TableLayoutPanel tbGridProductsCustom;
         private System.Windows.Forms.PictureBox pictureBox14;
     }
 }

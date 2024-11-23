@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,15 +10,14 @@ using System.Windows.Forms;
 
 namespace TBD_Eq
 {
-    public partial class Login : Form
+    public partial class FormSignUp : Form
     {
+
         private Font defaultFont;
         
-        
-        public Login()
+        public FormSignUp()
         {
             InitializeComponent();
-            
             InitializePanels();
         }
         private void InitializePanels()
@@ -47,9 +45,41 @@ namespace TBD_Eq
             txtPassword.BorderStyle = BorderStyle.None; // No mostrar el borde predeterminado
 
             lblPasswordR.Click += Label_Click;
+            //Panel para la confirmacion de contraseña
+            pnlConfirmPass.Click += PnlConfirmPass_Click;
+            pnlConfirmPass.BorderStyle = BorderStyle.None; // No mostrar el borde predeterminado
+
+            txtConfirmPass.UseSystemPasswordChar = true; // Mostrar asteriscos en lugar de caracteres reales
+            txtConfirmPass.Enter += TextBox_Enter;
+            txtConfirmPass.Leave += TextBox_Leave;
+            txtConfirmPass.BorderStyle = BorderStyle.None; // No mostrar el borde predeterminado
+            lblPasswordCR.Click += Label_Click;
+            //Panel para el Email
+            pnlEmail.Click += PnlEmail_Click;
+            pnlEmail.BorderStyle = BorderStyle.None; // No mostrar el borde predeterminado
+
+            txtEmail.UseSystemPasswordChar = true; // Mostrar asteriscos en lugar de caracteres reales
+            txtEmail.Enter += TextBox_Enter;
+            txtEmail.Leave += TextBox_Leave;
+            txtEmail.BorderStyle = BorderStyle.None; // No mostrar el borde predeterminado
+            lblEmail.Click += Label_Click;
+        }
+
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
 
         }
 
+        private void PnlConfirmPass_Click(object sender, EventArgs e)
+        {
+            txtConfirmPass.Focus();
+        }
+
+        private void PnlEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.Focus();
+        }
 
         private void PnlUsername_Click(object sender, EventArgs e)
         {
@@ -134,41 +164,21 @@ namespace TBD_Eq
             txtPassword.Focus();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+
+        private void pnlConfirmPass_Click(object sender, EventArgs e)
         {
-            string connectionString = $"Data Source=localhost;Initial Catalog=empresaGIC;User Id={txtUsername.Text};Password={txtPassword.Text}";
-
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connectionString))
-                {
-                    connection.Open(); // Intenta abrir la conexión
-
-                    // Si se llega aquí, la conexión fue exitosa
-                    MessageBox.Show("Inicio de sesión exitoso.");
-
-                    this.Visible = false;
-                    FormHub.loged = true;
-                    connection.Close(); // Cerrar la conexión
-                }
-            }
-            catch (SqlException ex)
-            {
-                // Si hay un error, esto indica que el login o contraseña son incorrectos
-                MessageBox.Show("Error al iniciar sesión: " + ex.Message);
-            }
-
+            txtConfirmPass.Focus();
         }
 
-        private void lblSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pnlEmail_Click(object sender, EventArgs e)
         {
-            FormSignUp signUp = new FormSignUp();
-            signUp.Show();
+            txtEmail.Focus();
         }
 
-        private void Login_Click(object sender, EventArgs e)
+        private void FormSignUp_Click(object sender, EventArgs e)
         {
-            btnLogin.Focus();
+            btnSignUp.Focus();
         }
     }
+    
 }

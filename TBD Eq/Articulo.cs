@@ -15,11 +15,38 @@ namespace TBD_Eq
         public Articulo()
         {
             InitializeComponent();
+            int n=Int16.Parse(numCantidad.Value.ToString());
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnXS_Click(object sender, EventArgs e)
+        {
+            btnXS.Enabled = false;
+
+        }
+
+        private void btnS_Click(object sender, EventArgs e)
+        {
+            btnS.Enabled = false;
+        }
+
+        private void btnM_Click(object sender, EventArgs e)
+        {
+            btnM.Enabled = false;
+        }
+
+        private void btnL_Click(object sender, EventArgs e)
+        {
+            btnL.Enabled = false;
+        }
+
+        private void btnXL_Click(object sender, EventArgs e)
+        {
+            btnXL.Enabled = false;
         }
     }
 }

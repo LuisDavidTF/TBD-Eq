@@ -10,55 +10,37 @@ using System.Windows.Forms;
 
 namespace TBD_Eq
 {
-    public partial class Form1 : Form
+    public partial class FormHub : Form
     {
+
+        public static bool loged = false;
+        private bool menuActive = false;
         private const string Filename = "C:/Users/luis_/source/repos/TBD Eq/TBD Eq/Resources/GridEj.jpg";
         public bool categoryMenu;
-        public Form1()
+        private FormInicio inicio=new FormInicio();
+        private Form active;
+        public FormHub()
         {
             InitializeComponent();
-            RefillingGrid();
+            inicio.TopLevel = false;
+            pnlFormsCenter.Controls.Add(inicio);
+            inicio.Show();
+            active = inicio;
+            pnlMenu.Visible = false;
+            //RefillingGrid();
 
         }
-        public void EnableMenuCategory() 
+        private void PaintForms(Form abre, Form cierra)
         {
-            if (!categoryMenu)
-            {
-                categoryMenu = true;
-                button6.Visible = true;
-                button7.Visible = true;
-                button8.Visible = true;
-                panel5.Height = 98;
-            }
-            else
-            {
-                categoryMenu = false;
-                button6.Visible = false;
-                button7.Visible = false;
-                button8.Visible = false;
-                panel5.Height = 30;
-            }
+            cierra.Close();
+            cierra.Dispose();
+            abre.TopLevel = false;
+            pnlFormsCenter.Controls.Add(abre);
+            abre.Show();
+            active = abre;
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            EnableMenuCategory();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            EnableMenuCategory();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            EnableMenuCategory();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            EnableMenuCategory();
-        }
+/*
         private void RefillingGrid() {
             for (int row = 0; row < tableLayoutPanel1.RowCount; row++)
             {
@@ -76,12 +58,54 @@ namespace TBD_Eq
                     tableLayoutPanel1.Controls.Add(pictureBox, col, row);
                 }
             }
+        }*/
+
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+            PaintForms(new AddProduct(), active);
+        }
+
+        private void btnModifyProduct_Click(object sender, EventArgs e)
+        {
+            PaintForms(new ModifyProduct(), active);
+        }
+
+        private void btnProfile_Click(object sender, EventArgs e)
+        {
+            PaintForms(new Profile(),active);
+        }
+
+        private void pbHead_Click(object sender, EventArgs e)
+        {
+            PaintForms(new FormInicio(),active);
+        }
+
+        private void pbUser_Click(object sender, EventArgs e)
+        {
+            if (loged)
+            {
+                Login login = new Login();
+                login.Show();
+            }
+            else
+            {
+                if (!menuActive)
+                {
+                    pnlMenu.Visible = true;
+                    menuActive = true;
+                }
+                else
+                {
+                    pnlMenu.Visible = false;
+                    menuActive = false;
+                }
+            }
         }
     }
 }

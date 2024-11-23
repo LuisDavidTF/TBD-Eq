@@ -37,6 +37,7 @@ namespace TBD_Eq
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.lblPasswordR = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblSignUp = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlUsername.SuspendLayout();
             this.pnlPassword.SuspendLayout();
@@ -132,26 +133,41 @@ namespace TBD_Eq
             this.txtPassword.Size = new System.Drawing.Size(221, 32);
             this.txtPassword.TabIndex = 1;
             // 
+            // lblSignUp
+            // 
+            this.lblSignUp.AutoSize = true;
+            this.lblSignUp.Font = new System.Drawing.Font("Segoe Script", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSignUp.Location = new System.Drawing.Point(257, 414);
+            this.lblSignUp.Name = "lblSignUp";
+            this.lblSignUp.Size = new System.Drawing.Size(81, 27);
+            this.lblSignUp.TabIndex = 11;
+            this.lblSignUp.TabStop = true;
+            this.lblSignUp.Text = "Sign Up";
+            this.lblSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblSignUp_LinkClicked);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(211)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(350, 450);
-            this.ControlBox = false;
+            this.Controls.Add(this.lblSignUp);
             this.Controls.Add(this.pnlPassword);
             this.Controls.Add(this.pnlUsername);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login";
             this.Text = "Login";
+            this.Click += new System.EventHandler(this.Login_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlUsername.ResumeLayout(false);
             this.pnlUsername.PerformLayout();
             this.pnlPassword.ResumeLayout(false);
             this.pnlPassword.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -165,5 +181,6 @@ namespace TBD_Eq
         private System.Windows.Forms.Panel pnlPassword;
         private System.Windows.Forms.Label lblPasswordR;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.LinkLabel lblSignUp;
     }
 }
