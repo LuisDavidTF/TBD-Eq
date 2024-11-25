@@ -133,10 +133,40 @@ namespace TBD_Eq
 
             txtPassword.Focus();
         }
+        private int IniciarSesion(string nombreUsuario, string contraseña)
+        {
+
+            using (SqlConnection con = new SqlConnection("Data Source=localhost;Integrated Security=SSPI;Initial Catalog=Velonia"))
+            {
+                SqlCommand cmd = new SqlCommand("IniciarSesion", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+
+                con.Open();
+                var resultado = cmd.ExecuteScalar();
+                return resultado != null ? Convert.ToInt32(resultado) : -1;
+            }
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionString = $"Data Source=localhost;Initial Catalog=empresaGIC;User Id={txtUsername.Text};Password={txtPassword.Text}";
+            
+            FormHub.idUser= IniciarSesion(txtUsername.Text, txtPassword.Text);
+            if (FormHub.idUser == -1)
+            {
+                MessageBox.Show("Error al iniciar sesión: Usuario y/o contraseña incorrecta");
+            }
+            else 
+            {
+                MessageBox.Show("Inicio de sesión exitoso.");
+                this.TopLevel = false;
+                this.Close();
+                this.Dispose();
+                FormHub.loged = true;
+            }
+            /*string connectionString = $"Data Source=localhost;Initial Catalog=empresaGIC;User Id={txtUsername.Text};Password={txtPassword.Text}";
 
             try
             {
@@ -157,7 +187,7 @@ namespace TBD_Eq
                 // Si hay un error, esto indica que el login o contraseña son incorrectos
                 MessageBox.Show("Error al iniciar sesión: " + ex.Message);
             }
-
+            */
         }
 
         private void lblSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

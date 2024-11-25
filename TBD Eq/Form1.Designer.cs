@@ -29,71 +29,23 @@ namespace TBD_Eq
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHead = new System.Windows.Forms.Panel();
-            this.pbHead = new System.Windows.Forms.PictureBox();
-            this.pbShoppingCart = new System.Windows.Forms.PictureBox();
-            this.pbUser = new System.Windows.Forms.PictureBox();
             this.pnlFormsCenter = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnModifyProduct = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
-            this.pnlHead.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHead)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbShoppingCart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
+            this.pbUser = new System.Windows.Forms.PictureBox();
+            this.pbShoppingCart = new System.Windows.Forms.PictureBox();
+            this.pbHead = new System.Windows.Forms.PictureBox();
+            this.pnlHead = new System.Windows.Forms.Panel();
             this.pnlFormsCenter.SuspendLayout();
             this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShoppingCart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHead)).BeginInit();
+            this.pnlHead.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlHead
-            // 
-            this.pnlHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(211)))), ((int)(((byte)(196)))));
-            this.pnlHead.Controls.Add(this.pbHead);
-            this.pnlHead.Controls.Add(this.pbShoppingCart);
-            this.pnlHead.Controls.Add(this.pbUser);
-            this.pnlHead.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHead.Location = new System.Drawing.Point(0, 0);
-            this.pnlHead.Name = "pnlHead";
-            this.pnlHead.Size = new System.Drawing.Size(972, 71);
-            this.pnlHead.TabIndex = 0;
-            // 
-            // pbHead
-            // 
-            this.pbHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(205)))), ((int)(((byte)(191)))));
-            this.pbHead.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pbHead.Image = global::TBD_Eq.Properties.Resources.Logo1;
-            this.pbHead.Location = new System.Drawing.Point(0, 0);
-            this.pbHead.Name = "pbHead";
-            this.pbHead.Size = new System.Drawing.Size(819, 71);
-            this.pbHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbHead.TabIndex = 2;
-            this.pbHead.TabStop = false;
-            this.pbHead.Click += new System.EventHandler(this.pbHead_Click);
-            // 
-            // pbShoppingCart
-            // 
-            this.pbShoppingCart.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbShoppingCart.Image = global::TBD_Eq.Properties.Resources.Carrito;
-            this.pbShoppingCart.Location = new System.Drawing.Point(828, 0);
-            this.pbShoppingCart.Name = "pbShoppingCart";
-            this.pbShoppingCart.Size = new System.Drawing.Size(71, 71);
-            this.pbShoppingCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbShoppingCart.TabIndex = 1;
-            this.pbShoppingCart.TabStop = false;
-            // 
-            // pbUser
-            // 
-            this.pbUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pbUser.Image = global::TBD_Eq.Properties.Resources.User1;
-            this.pbUser.Location = new System.Drawing.Point(899, 0);
-            this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(73, 71);
-            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbUser.TabIndex = 0;
-            this.pbUser.TabStop = false;
-            this.pbUser.Click += new System.EventHandler(this.pbUser_Click);
             // 
             // pnlFormsCenter
             // 
@@ -101,10 +53,9 @@ namespace TBD_Eq
             this.pnlFormsCenter.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.pnlFormsCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
             this.pnlFormsCenter.Controls.Add(this.pnlMenu);
-            this.pnlFormsCenter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlFormsCenter.Location = new System.Drawing.Point(0, 0);
+            this.pnlFormsCenter.Location = new System.Drawing.Point(0, 71);
             this.pnlFormsCenter.Name = "pnlFormsCenter";
-            this.pnlFormsCenter.Size = new System.Drawing.Size(972, 614);
+            this.pnlFormsCenter.Size = new System.Drawing.Size(972, 537);
             this.pnlFormsCenter.TabIndex = 1;
             // 
             // pnlMenu
@@ -113,7 +64,7 @@ namespace TBD_Eq
             this.pnlMenu.Controls.Add(this.btnModifyProduct);
             this.pnlMenu.Controls.Add(this.btnAddProduct);
             this.pnlMenu.Controls.Add(this.btnProfile);
-            this.pnlMenu.Location = new System.Drawing.Point(828, 71);
+            this.pnlMenu.Location = new System.Drawing.Point(828, 0);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(140, 214);
             this.pnlMenu.TabIndex = 0;
@@ -170,6 +121,55 @@ namespace TBD_Eq
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
+            // pbUser
+            // 
+            this.pbUser.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pbUser.Image = global::TBD_Eq.Properties.Resources.User1;
+            this.pbUser.Location = new System.Drawing.Point(899, 0);
+            this.pbUser.Name = "pbUser";
+            this.pbUser.Size = new System.Drawing.Size(73, 71);
+            this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbUser.TabIndex = 0;
+            this.pbUser.TabStop = false;
+            this.pbUser.Click += new System.EventHandler(this.pbUser_Click);
+            // 
+            // pbShoppingCart
+            // 
+            this.pbShoppingCart.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pbShoppingCart.Image = global::TBD_Eq.Properties.Resources.Carrito;
+            this.pbShoppingCart.Location = new System.Drawing.Point(828, 0);
+            this.pbShoppingCart.Name = "pbShoppingCart";
+            this.pbShoppingCart.Size = new System.Drawing.Size(71, 71);
+            this.pbShoppingCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbShoppingCart.TabIndex = 1;
+            this.pbShoppingCart.TabStop = false;
+            this.pbShoppingCart.Click += new System.EventHandler(this.pbShoppingCart_Click);
+            // 
+            // pbHead
+            // 
+            this.pbHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(205)))), ((int)(((byte)(191)))));
+            this.pbHead.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbHead.Image = global::TBD_Eq.Properties.Resources.Logo1;
+            this.pbHead.Location = new System.Drawing.Point(0, 0);
+            this.pbHead.Name = "pbHead";
+            this.pbHead.Size = new System.Drawing.Size(819, 71);
+            this.pbHead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbHead.TabIndex = 2;
+            this.pbHead.TabStop = false;
+            this.pbHead.Click += new System.EventHandler(this.pbHead_Click);
+            // 
+            // pnlHead
+            // 
+            this.pnlHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(211)))), ((int)(((byte)(196)))));
+            this.pnlHead.Controls.Add(this.pbHead);
+            this.pnlHead.Controls.Add(this.pbShoppingCart);
+            this.pnlHead.Controls.Add(this.pbUser);
+            this.pnlHead.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHead.Location = new System.Drawing.Point(0, 0);
+            this.pnlHead.Name = "pnlHead";
+            this.pnlHead.Size = new System.Drawing.Size(972, 71);
+            this.pnlHead.TabIndex = 0;
+            // 
             // FormHub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -180,28 +180,27 @@ namespace TBD_Eq
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormHub";
             this.Text = "VELONIA";
-            this.pnlHead.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbHead)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbShoppingCart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             this.pnlFormsCenter.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShoppingCart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHead)).EndInit();
+            this.pnlHead.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlHead;
         private System.Windows.Forms.Panel pnlFormsCenter;
-        private System.Windows.Forms.PictureBox pbHead;
-        private System.Windows.Forms.PictureBox pbShoppingCart;
-        private System.Windows.Forms.PictureBox pbUser;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Button btnProfile;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnModifyProduct;
         private System.Windows.Forms.Button btnAddProduct;
+        private System.Windows.Forms.PictureBox pbUser;
+        private System.Windows.Forms.PictureBox pbShoppingCart;
+        private System.Windows.Forms.PictureBox pbHead;
+        private System.Windows.Forms.Panel pnlHead;
     }
 }
 

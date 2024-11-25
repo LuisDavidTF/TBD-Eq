@@ -50,7 +50,6 @@ namespace TBD_Eq
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlTableGrid = new System.Windows.Forms.Panel();
             this.tbGridProductsCustom = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pnlConteiner.SuspendLayout();
             this.pnlBtnsCategorys.SuspendLayout();
             this.pnlPCustom.SuspendLayout();
@@ -66,8 +65,6 @@ namespace TBD_Eq
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlTableGrid.SuspendLayout();
-            this.tbGridProductsCustom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlConteiner
@@ -83,7 +80,7 @@ namespace TBD_Eq
             this.pnlConteiner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlConteiner.Location = new System.Drawing.Point(0, 0);
             this.pnlConteiner.Name = "pnlConteiner";
-            this.pnlConteiner.Size = new System.Drawing.Size(970, 531);
+            this.pnlConteiner.Size = new System.Drawing.Size(971, 524);
             this.pnlConteiner.TabIndex = 2;
             // 
             // btnLogin
@@ -169,7 +166,7 @@ namespace TBD_Eq
             this.pnlPCustom.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPCustom.Location = new System.Drawing.Point(0, 250);
             this.pnlPCustom.Name = "pnlPCustom";
-            this.pnlPCustom.Size = new System.Drawing.Size(949, 250);
+            this.pnlPCustom.Size = new System.Drawing.Size(950, 250);
             this.pnlPCustom.TabIndex = 1;
             // 
             // pbCarouselPCustom
@@ -205,7 +202,7 @@ namespace TBD_Eq
             // pictureBox6
             // 
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox6.Location = new System.Drawing.Point(849, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(850, 0);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 250);
             this.pictureBox6.TabIndex = 1;
@@ -231,7 +228,7 @@ namespace TBD_Eq
             this.pnlProductsMSales.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlProductsMSales.Location = new System.Drawing.Point(0, 0);
             this.pnlProductsMSales.Name = "pnlProductsMSales";
-            this.pnlProductsMSales.Size = new System.Drawing.Size(949, 250);
+            this.pnlProductsMSales.Size = new System.Drawing.Size(950, 250);
             this.pnlProductsMSales.TabIndex = 0;
             // 
             // pbCarouselMSales
@@ -243,6 +240,7 @@ namespace TBD_Eq
             this.pbCarouselMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCarouselMSales.TabIndex = 4;
             this.pbCarouselMSales.TabStop = false;
+            this.pbCarouselMSales.Click += new System.EventHandler(this.pbCarouselMSales_Click);
             // 
             // pbLeftMSales
             // 
@@ -253,6 +251,7 @@ namespace TBD_Eq
             this.pbLeftMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLeftMSales.TabIndex = 3;
             this.pbLeftMSales.TabStop = false;
+            this.pbLeftMSales.Click += new System.EventHandler(this.pbLeftMSales_Click);
             // 
             // pbRigthMSales
             // 
@@ -263,11 +262,12 @@ namespace TBD_Eq
             this.pbRigthMSales.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbRigthMSales.TabIndex = 2;
             this.pbRigthMSales.TabStop = false;
+            this.pbRigthMSales.Click += new System.EventHandler(this.pbRigthMSales_Click_1);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox5.Location = new System.Drawing.Point(849, 0);
+            this.pictureBox5.Location = new System.Drawing.Point(850, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(100, 250);
             this.pictureBox5.TabIndex = 1;
@@ -298,35 +298,24 @@ namespace TBD_Eq
             this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tbGridProductsCustom.Controls.Add(this.pictureBox14, 0, 0);
+            this.tbGridProductsCustom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tbGridProductsCustom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbGridProductsCustom.Location = new System.Drawing.Point(0, 0);
             this.tbGridProductsCustom.Name = "tbGridProductsCustom";
             this.tbGridProductsCustom.RowCount = 5;
-            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.9095F));
-            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.36199F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tbGridProductsCustom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tbGridProductsCustom.Size = new System.Drawing.Size(943, 432);
             this.tbGridProductsCustom.TabIndex = 0;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox14.Image = global::TBD_Eq.Properties.Resources.GridEj;
-            this.pictureBox14.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(182, 80);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 1;
-            this.pictureBox14.TabStop = false;
             // 
             // FormInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 531);
+            this.ClientSize = new System.Drawing.Size(971, 524);
             this.ControlBox = false;
             this.Controls.Add(this.pnlConteiner);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -347,8 +336,6 @@ namespace TBD_Eq
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlTableGrid.ResumeLayout(false);
-            this.tbGridProductsCustom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,6 +363,5 @@ namespace TBD_Eq
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel pnlTableGrid;
         private System.Windows.Forms.TableLayoutPanel tbGridProductsCustom;
-        private System.Windows.Forms.PictureBox pictureBox14;
     }
 }

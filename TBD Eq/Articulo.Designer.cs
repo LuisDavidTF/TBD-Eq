@@ -31,10 +31,9 @@ namespace TBD_Eq
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Articulo));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbLeft = new System.Windows.Forms.PictureBox();
-            this.pbRigth = new System.Windows.Forms.PictureBox();
+            this.numCantidad = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAddtoCar = new System.Windows.Forms.Button();
+            this.btnShop = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.pbThirdColor = new System.Windows.Forms.PictureBox();
             this.pbSecondColor = new System.Windows.Forms.PictureBox();
@@ -50,25 +49,20 @@ namespace TBD_Eq
             this.rtxtDescripcion = new System.Windows.Forms.RichTextBox();
             this.txtNombre = new System.Windows.Forms.Label();
             this.pbCarousel = new System.Windows.Forms.PictureBox();
-            this.numCantidad = new System.Windows.Forms.NumericUpDown();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRigth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstColor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarousel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
-            this.panel2.Controls.Add(this.pbLeft);
-            this.panel2.Controls.Add(this.pbRigth);
             this.panel2.Controls.Add(this.numCantidad);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnAddtoCar);
+            this.panel2.Controls.Add(this.btnShop);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.pbThirdColor);
             this.panel2.Controls.Add(this.pbSecondColor);
@@ -87,56 +81,50 @@ namespace TBD_Eq
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(969, 547);
+            this.panel2.Size = new System.Drawing.Size(971, 524);
             this.panel2.TabIndex = 2;
             // 
-            // pbLeft
+            // numCantidad
             // 
-            this.pbLeft.Image = global::TBD_Eq.Properties.Resources.Arrow_left;
-            this.pbLeft.Location = new System.Drawing.Point(24, 254);
-            this.pbLeft.Name = "pbLeft";
-            this.pbLeft.Size = new System.Drawing.Size(35, 38);
-            this.pbLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLeft.TabIndex = 21;
-            this.pbLeft.TabStop = false;
-            // 
-            // pbRigth
-            // 
-            this.pbRigth.Image = global::TBD_Eq.Properties.Resources.Arrow_rigth;
-            this.pbRigth.Location = new System.Drawing.Point(327, 254);
-            this.pbRigth.Name = "pbRigth";
-            this.pbRigth.Size = new System.Drawing.Size(35, 38);
-            this.pbRigth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbRigth.TabIndex = 20;
-            this.pbRigth.TabStop = false;
+            this.numCantidad.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.numCantidad.Location = new System.Drawing.Point(895, 340);
+            this.numCantidad.Name = "numCantidad";
+            this.numCantidad.Size = new System.Drawing.Size(67, 34);
+            this.numCantidad.TabIndex = 19;
+            this.numCantidad.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(766, 363);
+            this.label1.Location = new System.Drawing.Point(771, 342);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 28);
             this.label1.TabIndex = 18;
             this.label1.Text = "Cantidad:";
             // 
-            // btnAddtoCar
+            // btnShop
             // 
-            this.btnAddtoCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(211)))), ((int)(((byte)(196)))));
-            this.btnAddtoCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddtoCar.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddtoCar.Location = new System.Drawing.Point(684, 425);
-            this.btnAddtoCar.Name = "btnAddtoCar";
-            this.btnAddtoCar.Size = new System.Drawing.Size(94, 52);
-            this.btnAddtoCar.TabIndex = 17;
-            this.btnAddtoCar.Text = "Añadir al Carrito";
-            this.btnAddtoCar.UseVisualStyleBackColor = false;
+            this.btnShop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(211)))), ((int)(((byte)(196)))));
+            this.btnShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShop.Font = new System.Drawing.Font("Cambria", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShop.Location = new System.Drawing.Point(689, 404);
+            this.btnShop.Name = "btnShop";
+            this.btnShop.Size = new System.Drawing.Size(104, 52);
+            this.btnShop.TabIndex = 17;
+            this.btnShop.Text = "Comprar";
+            this.btnShop.UseVisualStyleBackColor = false;
+            this.btnShop.Click += new System.EventHandler(this.btnShop_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(410, 125);
+            this.label5.Location = new System.Drawing.Point(415, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(146, 28);
             this.label5.TabIndex = 16;
@@ -145,7 +133,7 @@ namespace TBD_Eq
             // pbThirdColor
             // 
             this.pbThirdColor.BackColor = System.Drawing.Color.Fuchsia;
-            this.pbThirdColor.Location = new System.Drawing.Point(520, 445);
+            this.pbThirdColor.Location = new System.Drawing.Point(525, 424);
             this.pbThirdColor.Name = "pbThirdColor";
             this.pbThirdColor.Size = new System.Drawing.Size(37, 32);
             this.pbThirdColor.TabIndex = 15;
@@ -154,7 +142,7 @@ namespace TBD_Eq
             // pbSecondColor
             // 
             this.pbSecondColor.BackColor = System.Drawing.Color.White;
-            this.pbSecondColor.Location = new System.Drawing.Point(477, 445);
+            this.pbSecondColor.Location = new System.Drawing.Point(482, 424);
             this.pbSecondColor.Name = "pbSecondColor";
             this.pbSecondColor.Size = new System.Drawing.Size(37, 32);
             this.pbSecondColor.TabIndex = 14;
@@ -163,7 +151,7 @@ namespace TBD_Eq
             // pbFirstColor
             // 
             this.pbFirstColor.BackColor = System.Drawing.Color.Black;
-            this.pbFirstColor.Location = new System.Drawing.Point(434, 445);
+            this.pbFirstColor.Location = new System.Drawing.Point(439, 424);
             this.pbFirstColor.Name = "pbFirstColor";
             this.pbFirstColor.Size = new System.Drawing.Size(37, 32);
             this.pbFirstColor.TabIndex = 13;
@@ -173,7 +161,7 @@ namespace TBD_Eq
             // btnXL
             // 
             this.btnXL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXL.Location = new System.Drawing.Point(680, 365);
+            this.btnXL.Location = new System.Drawing.Point(685, 344);
             this.btnXL.Name = "btnXL";
             this.btnXL.Size = new System.Drawing.Size(57, 30);
             this.btnXL.TabIndex = 12;
@@ -184,7 +172,7 @@ namespace TBD_Eq
             // btnL
             // 
             this.btnL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnL.Location = new System.Drawing.Point(617, 365);
+            this.btnL.Location = new System.Drawing.Point(622, 344);
             this.btnL.Name = "btnL";
             this.btnL.Size = new System.Drawing.Size(57, 30);
             this.btnL.TabIndex = 11;
@@ -195,7 +183,7 @@ namespace TBD_Eq
             // btnM
             // 
             this.btnM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnM.Location = new System.Drawing.Point(554, 365);
+            this.btnM.Location = new System.Drawing.Point(559, 344);
             this.btnM.Name = "btnM";
             this.btnM.Size = new System.Drawing.Size(57, 30);
             this.btnM.TabIndex = 10;
@@ -206,7 +194,7 @@ namespace TBD_Eq
             // btnS
             // 
             this.btnS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnS.Location = new System.Drawing.Point(491, 365);
+            this.btnS.Location = new System.Drawing.Point(496, 344);
             this.btnS.Name = "btnS";
             this.btnS.Size = new System.Drawing.Size(57, 30);
             this.btnS.TabIndex = 9;
@@ -217,7 +205,7 @@ namespace TBD_Eq
             // btnXS
             // 
             this.btnXS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXS.Location = new System.Drawing.Point(428, 365);
+            this.btnXS.Location = new System.Drawing.Point(433, 344);
             this.btnXS.Name = "btnXS";
             this.btnXS.Size = new System.Drawing.Size(57, 30);
             this.btnXS.TabIndex = 8;
@@ -229,7 +217,7 @@ namespace TBD_Eq
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(429, 414);
+            this.label4.Location = new System.Drawing.Point(434, 393);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 28);
             this.label4.TabIndex = 7;
@@ -239,7 +227,7 @@ namespace TBD_Eq
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(423, 334);
+            this.label3.Location = new System.Drawing.Point(428, 313);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 28);
             this.label3.TabIndex = 6;
@@ -249,7 +237,7 @@ namespace TBD_Eq
             // 
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(672, 94);
+            this.lblPrice.Location = new System.Drawing.Point(677, 73);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(147, 28);
             this.lblPrice.TabIndex = 5;
@@ -259,7 +247,7 @@ namespace TBD_Eq
             // 
             this.rtxtDescripcion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(210)))), ((int)(((byte)(191)))));
             this.rtxtDescripcion.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxtDescripcion.Location = new System.Drawing.Point(415, 162);
+            this.rtxtDescripcion.Location = new System.Drawing.Point(420, 141);
             this.rtxtDescripcion.Name = "rtxtDescripcion";
             this.rtxtDescripcion.Size = new System.Drawing.Size(363, 169);
             this.rtxtDescripcion.TabIndex = 3;
@@ -269,7 +257,7 @@ namespace TBD_Eq
             // 
             this.txtNombre.AutoSize = true;
             this.txtNombre.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(407, 78);
+            this.txtNombre.Location = new System.Drawing.Point(412, 57);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(187, 47);
             this.txtNombre.TabIndex = 1;
@@ -278,44 +266,29 @@ namespace TBD_Eq
             // pbCarousel
             // 
             this.pbCarousel.Image = global::TBD_Eq.Properties.Resources.Ej1;
-            this.pbCarousel.Location = new System.Drawing.Point(24, 78);
+            this.pbCarousel.Location = new System.Drawing.Point(29, 57);
             this.pbCarousel.Name = "pbCarousel";
             this.pbCarousel.Size = new System.Drawing.Size(338, 399);
             this.pbCarousel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCarousel.TabIndex = 0;
             this.pbCarousel.TabStop = false;
             // 
-            // numCantidad
-            // 
-            this.numCantidad.Font = new System.Drawing.Font("Cambria", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.numCantidad.Location = new System.Drawing.Point(890, 361);
-            this.numCantidad.Name = "numCantidad";
-            this.numCantidad.Size = new System.Drawing.Size(67, 34);
-            this.numCantidad.TabIndex = 19;
-            this.numCantidad.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // Articulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 547);
+            this.ClientSize = new System.Drawing.Size(971, 524);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Articulo";
             this.Text = "Articulo";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRigth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbThirdColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSecondColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFirstColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarousel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numCantidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,10 +310,8 @@ namespace TBD_Eq
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pbThirdColor;
         private System.Windows.Forms.PictureBox pbSecondColor;
-        private System.Windows.Forms.Button btnAddtoCar;
+        private System.Windows.Forms.Button btnShop;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pbLeft;
-        private System.Windows.Forms.PictureBox pbRigth;
         private System.Windows.Forms.NumericUpDown numCantidad;
     }
 }

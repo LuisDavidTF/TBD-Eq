@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -65,10 +66,30 @@ namespace TBD_Eq
             lblEmail.Click += Label_Click;
         }
 
+        private void RegistrarUsuario(string nombreUsuario, string contraseña, string email)
+        {
+            using (SqlConnection con = new SqlConnection("Data Source = localhost; Integrated Security = SSPI; Initial Catalog = Velonia"))
+            {
+                SqlCommand cmd = new SqlCommand("RegistrarUsuario", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
+                cmd.Parameters.AddWithValue("@Contraseña", contraseña);
+                cmd.Parameters.AddWithValue("@Email", email);
+
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Usuario registrado exitosamente.");
+            }
+        }
+
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
+            if (txtPassword.Text == txtConfirmPass.Text)
+            {
+                RegistrarUsuario(txtUsername.Text, txtPassword.Text, txtEmail.Text);
+            }
         }
 
         private void PnlConfirmPass_Click(object sender, EventArgs e)
